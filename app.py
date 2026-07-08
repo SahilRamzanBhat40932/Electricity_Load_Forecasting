@@ -110,16 +110,34 @@ section[data-testid="stSidebar"] *{
 /* Selectbox */
 /* ------------------------------------------------ */
 
-div[data-baseweb="select"] > div{
+div[data-baseweb="select"] *{
     background:#111827 !important;
     color:white !important;
 }
 
+div[data-baseweb="select"] span{
+    color:white !important;
+}
+
+div[role="listbox"]{
+    background:#111827 !important;
+}
+
+div[role="option"]{
+    background:#111827 !important;
+    color:white !important;
+}
+
+div[role="option"]:hover{
+    background:#2563EB !important;
+    color:white !important;
+}
+
 /* ------------------------------------------------ */
-/* Buttons */
+/* Download Button */
 /* ------------------------------------------------ */
 
-.stButton>button{
+[data-testid="stDownloadButton"] > button{
 
     width:100%;
     height:55px;
@@ -127,14 +145,17 @@ div[data-baseweb="select"] > div{
     border:none;
     border-radius:15px;
 
+    background:linear-gradient(90deg,#10B981,#059669) !important;
+
     color:white !important;
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
 
-    background:linear-gradient(90deg,#2563EB,#7C3AED);
 }
 
-.stButton>button:hover{
+[data-testid="stDownloadButton"] > button:hover{
+
+    background:linear-gradient(90deg,#059669,#047857) !important;
 
     transform:scale(1.02);
 

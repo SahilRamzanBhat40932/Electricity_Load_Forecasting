@@ -56,7 +56,6 @@ header {visibility:hidden;}
 
 html,
 body,
-p,
 span,
 label,
 h1,

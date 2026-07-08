@@ -28,76 +28,167 @@ st.set_page_config(
 # ============================================================
 # Premium Dark Theme
 # ============================================================
-
 st.markdown("""
 <style>
 
-/* Hide Streamlit Elements */
+/* ------------------------------------------------ */
+/* Hide Streamlit Default Elements */
+/* ------------------------------------------------ */
+
 #MainMenu {visibility:hidden;}
 footer {visibility:hidden;}
 header {visibility:hidden;}
 
-/* Background */
-.stApp {
-    background: radial-gradient(at 0% 0%, #022c22 0px, transparent 50%), 
-                radial-gradient(at 100% 100%, #030712 0px, transparent 50%),
-                #090d16;
-    color: #f1f5f9;
+/* ------------------------------------------------ */
+/* Main Background */
+/* ------------------------------------------------ */
+
+.stApp{
+    background:
+    radial-gradient(circle at top left,#0F766E 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7C3AED 0%,transparent 35%),
+    #0F172A;
 }
 
+/* ------------------------------------------------ */
+/* ALL TEXT */
+/* ------------------------------------------------ */
 
+html,
+body,
+p,
+span,
+label,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:white !important;
+}
+
+/* ------------------------------------------------ */
 /* Sidebar */
+/* ------------------------------------------------ */
+
 section[data-testid="stSidebar"]{
-    background: rgba(15,23,42,0.85);
-    backdrop-filter: blur(15px);
-    border-right:1px solid rgba(255,255,255,0.1);
+    background:#111827 !important;
+    border-right:1px solid #374151;
 }
 
+section[data-testid="stSidebar"] *{
+    color:white !important;
+}
+
+/* ------------------------------------------------ */
 /* Metric Cards */
+/* ------------------------------------------------ */
+
 [data-testid="metric-container"]{
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(18px);
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:18px;
+    background:#1E293B !important;
+    border:1px solid #3B82F6 !important;
+    border-radius:15px;
     padding:18px;
 }
 
+[data-testid="metric-container"] *{
+    color:white !important;
+}
+
+/* ------------------------------------------------ */
+/* Number Input */
+/* ------------------------------------------------ */
+
+.stNumberInput input{
+    background:#111827 !important;
+    color:white !important;
+}
+
+/* ------------------------------------------------ */
+/* Selectbox */
+/* ------------------------------------------------ */
+
+div[data-baseweb="select"] > div{
+    background:#111827 !important;
+    color:white !important;
+}
+
+/* ------------------------------------------------ */
 /* Buttons */
+/* ------------------------------------------------ */
+
 .stButton>button{
+
     width:100%;
     height:55px;
-    border-radius:15px;
+
     border:none;
+    border-radius:15px;
+
+    color:white !important;
     font-size:20px;
     font-weight:bold;
-    color:white;
-    background:linear-gradient(90deg,#3B82F6,#9333EA);
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
 }
 
 .stButton>button:hover{
+
     transform:scale(1.02);
+
 }
 
-/* Inputs */
-.stNumberInput input{
-    background:#111827;
-    color:white;
-    border-radius:12px;
+/* ------------------------------------------------ */
+/* Dataframe */
+/* ------------------------------------------------ */
+
+[data-testid="stDataFrame"] *{
+
+    color:white !important;
+
 }
 
-.stSelectbox div{
-    background:#111827;
-    color:white;
+/* ------------------------------------------------ */
+/* Tabs */
+/* ------------------------------------------------ */
+
+button[data-baseweb="tab"]{
+
+    color:white !important;
+
 }
 
-/* Titles */
-h1{
-    color:#60A5FA;
-    font-weight:800;
+/* ------------------------------------------------ */
+/* Expander */
+/* ------------------------------------------------ */
+
+details{
+
+    background:#1E293B;
+    border-radius:10px;
+
 }
 
-h2,h3{
-    color:#93C5FD;
+/* ------------------------------------------------ */
+/* Success / Info */
+/* ------------------------------------------------ */
+
+[data-testid="stAlert"]{
+
+    color:white !important;
+
+}
+
+/* ------------------------------------------------ */
+/* Markdown */
+/* ------------------------------------------------ */
+
+.stMarkdown{
+
+    color:white !important;
+
 }
 
 </style>

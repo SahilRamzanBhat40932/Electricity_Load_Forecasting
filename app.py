@@ -111,7 +111,7 @@ section[data-testid="stSidebar"] *{
 /* ------------------------------------------------ */
 
 div[data-baseweb="select"] *{
-    background:#111827 !important;
+    background:#233423 !important;
     color:white !important;
 }
 
@@ -147,7 +147,7 @@ div[role="option"]:hover{
 
     background:linear-gradient(90deg,#10B981,#059669) !important;
 
-    color:white !important;
+    color:red !important;
     font-size:18px;
     font-weight:bold;
 

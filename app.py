@@ -110,26 +110,43 @@ section[data-testid="stSidebar"] *{
 /* Selectbox */
 /* ------------------------------------------------ */
 
-div[data-baseweb="select"] *{
-    background:#233423 !important;
+/* Selected Box */
+
+div[data-baseweb="select"] > div{
+    background:#111827 !important;
     color:white !important;
 }
+
+/* Selected Text */
 
 div[data-baseweb="select"] span{
     color:white !important;
 }
 
+/* Dropdown Menu */
+
 div[role="listbox"]{
     background:#111827 !important;
+    border:1px solid #3B82F6 !important;
 }
+
+/* Each Option */
 
 div[role="option"]{
     background:#111827 !important;
     color:white !important;
 }
 
+/* Hover */
+
 div[role="option"]:hover{
     background:#2563EB !important;
+    color:white !important;
+}
+
+/* City & Minute Selected Text */
+
+div[data-baseweb="select"] *{
     color:white !important;
 }
 
@@ -137,7 +154,7 @@ div[role="option"]:hover{
 /* Download Button */
 /* ------------------------------------------------ */
 
-[data-testid="stDownloadButton"] > button{
+[data-testid="stDownloadButton"]>button{
 
     width:100%;
     height:55px;
@@ -145,18 +162,20 @@ div[role="option"]:hover{
     border:none;
     border-radius:15px;
 
-   background:linear-gradient(90deg,#052649,#021218) !important;
-    color:red !important;
+    background:#059669 !important;
+
+    color:white !important;
+
     font-size:18px;
     font-weight:bold;
 
 }
 
-[data-testid="stDownloadButton"] > button:hover{
+[data-testid="stDownloadButton"]>button:hover{
 
-    background:linear-gradient(90deg,#059669,#047857) !important;
+    background:#047857 !important;
 
-    transform:scale(1.02);
+    color:white !important;
 
 }
 

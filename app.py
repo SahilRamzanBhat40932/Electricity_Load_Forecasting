@@ -346,20 +346,29 @@ with left:
     )
 
 with right:
-
+    
     lag1 = st.number_input(
         "Previous Load (10 min ago)",
-        value=90.0
+        min_value=0.0,
+        max_value=2340.0,
+        value=90.0,
+        step=0.1
     )
 
     lag2 = st.number_input(
         "Previous Load (20 min ago)",
-        value=88.0
+        min_value=0.0,
+        max_value=2340.0,
+        value=88.0,
+        step=0.1
     )
-
+    
     lag3 = st.number_input(
         "Previous Load (30 min ago)",
-        value=86.0
+        min_value=0.0,
+        max_value=2340.0,
+        value=86.0,
+        step=0.1
     )
 
 st.markdown("---")

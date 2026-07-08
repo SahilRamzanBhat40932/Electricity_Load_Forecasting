@@ -56,6 +56,7 @@ header {visibility:hidden;}
 
 html,
 body,
+p,
 span,
 label,
 h1,
@@ -174,6 +175,37 @@ div[data-baseweb="select"] *{
     background:#047857 !important;
 
     color:white !important;
+
+}
+
+/* ------------------------------------------------ */
+/* Forecast Button */
+/* ------------------------------------------------ */
+
+.stButton > button{
+
+    width:100%;
+    height:55px;
+
+    border:none;
+    border-radius:15px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    color:white !important;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED) !important;
+
+}
+
+.stButton > button:hover{
+
+    background:linear-gradient(90deg,#1D4ED8,#6D28D9) !important;
+
+    color:white !important;
+
+    transform:scale(1.02);
 
 }
 

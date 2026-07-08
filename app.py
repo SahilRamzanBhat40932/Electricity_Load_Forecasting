@@ -145,8 +145,7 @@ div[role="option"]:hover{
     border:none;
     border-radius:15px;
 
-    background:linear-gradient(90deg,#10B981,#059669) !important;
-
+   background:linear-gradient(90deg,#059669,#047857) !important;
     color:red !important;
     font-size:18px;
     font-weight:bold;
